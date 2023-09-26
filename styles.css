@@ -48,7 +48,7 @@ select {
 input, textarea {
   background-color: #EEEEEE;
   border: 1px solid #EEEEEE;
-  color: #0000;
+  color: black;
 }
 
 .inline {
