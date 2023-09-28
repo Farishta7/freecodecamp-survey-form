@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freeCodeCamp Website Improvement Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="parent-div">
-        <h1 id="title">Website Improvement Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
-        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
-<fieldset>
-            <label id="name-label">Your Name</label>
-            <input required id="name" type="text" placeholder="Enter name"></input>
-            <label id="email-label">Your Email Address</label>
-            <input required id="email" type="email" placeholder="Enter email"></input>
-            <label id="number-label">Your Age (optional)</label>
-            <input id="number" type="number" min="13" max="100" placeholder="Enter number"></input>
-            </fieldset>
+      <h1 id="title">Website Improvement Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <form
+        id="survey-form"
+        method="post"
+        action="https://register-demo.freecodecamp.org"
+      >
+        <fieldset>
+          <label id="name-label">Your Name</label>
+          <input required id="name" type="text" placeholder="Enter Name" />
+          <label id="email-label">Your Email Address</label>
+          <input required id="email" type="email" placeholder="Enter Email" />
+          <label id="number-label">Your Age (optional)</label>
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="100"
+            placeholder="Enter Number"
+          />
+        </fieldset>
 
-
-            <fieldset>
-            <label for="dropdown"> How would you describe your coding level?
+        <fieldset>
+          <label for="dropdown">
+            How would you describe your coding level?
             <select id="dropdown">
-                <option value="0">(select one)</option>
-                <option value="1">Complete Beginner</option>
-                <option value="2">Less than 1 years experience</option>
-                <option value="3">Less than 2 years experience</option>
-                <option value="4">2 or more years experience</option>
-</label>
+              <option value="0">(select one)</option>
+              <option value="1">Complete Beginner</option>
+              <option value="2">Less than 1 years experience</option>
+              <option value="3">Less than 2 years experience</option>
+              <option value="4">2 or more years experience</option>
             </select>
-            </fieldset>
+          </label>
+        </fieldset>
+        <fieldset>
+          Would you visit freecodecamp in the future?
+          <label for="option1visitlevel">
+            <input
+              name="radio"
+              value="radio"
+              type="radio"
+              id="option1visitlevel"
+              class="inline"
+            />Yes, maybe once a week.</label
+          >
+          <label for="option2visitlevel">
+            <input
+              name="radio"
+              value="radio"
+              type="radio"
+              id="option2visitlevel"
+              class="inline"
+            />Yes, multiple times a week.</label
+          >
+          <label for="option3visitlevel">
+            <input
+              name="radio"
+              value="radio"
+              type="radio"
+              id="option3visitlevel"
+              class="inline"
+            />No, I have other resources.</label
+          >
+        </fieldset>
 
+        <fieldset>
+          Please tick what you would like improved:
+          <label>
+            <input type="checkbox" value="colour and design" class="inline" />
+            Colour and design of the website.</label
+          >
+          <label>
+            <input type="checkbox" value="course variety" class="inline" />
+            Variety of courses available.</label
+          >
+          <label>
+            <input type="checkbox" value="certification" class="inline" /> More
+            courses with certification.</label
+          >
 
-    <fieldset>
-        
-    Would you visit freecodecamp in the future?
-    <label for="option1visitlevel">
-            <input name="radio" value="radio" type="radio" id="option1visitlevel" class="inline">Yes, maybe once a week.</label>
-            <label for="option2visitlevel">
-            <input name="radio" value="radio" type="radio" id="option2visitlevel" class="inline">Yes, multiple times a week.</label>
-            <label for="option3visitlevel">
-            <input name="radio" value="radio" type="radio" id="option3visitlevel" class="inline">No, I have other resources.</label>
-</fieldset>
+          <br />
+          <label for="additionalinformation"
+            >Please provide any additional constructive criticism:
+            <textarea
+              id="additionalinformation"
+              rows="3"
+              cols="30"
+              placeholder="I would like ..."
+            ></textarea>
+          </label>
+        </fieldset>
 
-
-<fieldset>
-     Please tick what you would like improved:
-     <label>
-            <input type="checkbox" value="colour and design" class="inline"> Colour and design of the website.</label>
-            <label>
-            <input type="checkbox" value="course variety" class="inline"> Variety of courses available.</label>
-            <label>
-            <input type="checkbox" value="certification" class="inline"> More courses with certification.</label>
-
-            
-<br>
-            <label for="additionalinformation">Please provide any additional constructive criticism:
-                    <textarea id="additionalinformation" rows="3" cols="30" placeholder="I would like ..."></textarea></label>
-            
-            </fieldset>
-
-            
-
-
-            <input type="submit" id="submit" value="Submit" />
-        </form>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
